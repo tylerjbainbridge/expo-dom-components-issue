@@ -2,7 +2,7 @@
 
 // import './styles.css';
 
-export default function DOMComponent({
+export default function TylerWebComponentTest({
   name,
   dom,
 }: {
