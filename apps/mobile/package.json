@@ -1,9 +1,9 @@
 {
-  "name": "updates-issue-2",
+  "name": "mobile",
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
-    "start": "EXPO_USE_METRO_WORKSPACE_ROOT=1 npx expo start  --clear",
+    "start": "npx expo start  --clear",
     "reset-project": "node ./scripts/reset-project.js",
     "android": "expo start --android",
     "ios": "expo start --ios",
@@ -11,6 +11,9 @@
     "test": "jest --watchAll",
     "lint": "expo lint"
   },
+  "workspaces": [
+    "apps/*"
+  ],
   "jest": {
     "preset": "jest-expo"
   },

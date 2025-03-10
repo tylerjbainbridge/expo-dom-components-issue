@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "workspaces": [
-    "apps/*",
-    "packages/*"
+    "apps/*"
   ],
-  "packageManager": "pnpm@9.4.0",
   "engines": {
     "node": ">=23.7.0"
   },
@@ -16,23 +14,5 @@
   "devDependencies": {
     "@babel/core": "^7.24.0",
     "prettier": "^2.8.8"
-  },
-  "resolutions": {
-    "tamagui": "1.79.1",
-    "@tamagui/babel-plugin": "1.79.1",
-    "@tamagui/config": "1.79.1",
-    "@tamagui/image": "1.79.1",
-    "@tamagui/sheet": "1.79.1",
-    "@tamagui/toast": "1.79.1",
-    "react-native-svg": "13.4.0",
-    "@pothos/core": "^3.41.0",
-    "@expo/config-plugins": "~7.8.0",
-    "@expo/prebuild-config": "~6.7.0",
-    "@expo/metro-config": "~0.17.1",
-    "@expo/vector-icons": "14.0.0",
-    "next": "15.1.6",
-    "graphql": "^16.9.0",
-    "@sentry/nextjs": "8.42.0",
-    "import-in-the-middle": "1.11.2"
   }
 }
