@@ -1,19 +1,50 @@
-To repro-
+# Welcome to your Expo app 👋
 
-`cd apps/mobile`
-`npm start`
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-Here's what it should look like
-![image](https://github.com/user-attachments/assets/046be9dc-ac4e-4fff-bb18-c523b492d6df)
+## Get started
 
-But with a pnpm workspace + EXPO_USE_METRO_WORKSPACE_ROOT=1 + the dependencies listed (copied and pasted from our app)
+1. Install dependencies
 
-The dom component no longer loads. 
+   ```bash
+   npm install
+   ```
 
-We use an index.js file in our repo, so the `EXPO_USE_METRO_WORKSPACE_ROOT=1` is needed to find the index.js file. Otherwise it says not found.
+2. Start the app
 
-![image](https://github.com/user-attachments/assets/50165835-7390-4195-9899-7face854fe33)
+   ```bash
+    npx expo start
+   ```
 
-The dependencies aren't the issue, the Dom component still loaded with these dependencies. It wasn't until I made a simple pnpm workspace with `EXPO_USE_METRO_WORKSPACE_ROOT=1` that it broke.
+In the output, you'll find options to open the app in a
 
-My hunch is that this messes up the bundle resolution path, but unsure what the solution is.
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+
+## Get a fresh project
+
+When you're ready, run:
+
+```bash
+npm run reset-project
+```
+
+This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+
+## Learn more
+
+To learn more about developing your project with Expo, look at the following resources:
+
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+
+## Join the community
+
+Join our community of developers creating universal apps.
+
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
