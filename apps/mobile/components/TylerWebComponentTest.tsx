@@ -13,8 +13,8 @@ export default function TylerWebComponentTest({
   console.log('dom', dom);
 
   return (
-    <div style={{ backgroundColor: 'green', flex: 1 }}>
-      <p style={{ color: 'white' }}>Hello from the web view</p>
+    <div style={{ backgroundColor: 'blue', flex: 1 }}>
+      <p style={{ color: 'white' }}>Hello from the web view!</p>
     </div>
   );
 

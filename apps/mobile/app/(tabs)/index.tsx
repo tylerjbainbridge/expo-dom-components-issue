@@ -4,7 +4,7 @@ import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
-import TylerWebComponentTest from '@/components/TylerWebComponentTest';
+import TylerWebComponentTest from '../../components/TylerWebComponentTest';
 
 export default function HomeScreen() {
   return (
@@ -21,9 +21,18 @@ export default function HomeScreen() {
         <ThemedText type="title">Welcome!</ThemedText>
         <HelloWave />
       </ThemedView>
-      <ThemedText>Before Web View</ThemedText>
-      <TylerWebComponentTest name="DOMComponent" dom={{ matchContents: true }} />
-      <ThemedText>After Web View</ThemedText>
+      <ThemedText>Before Web View!</ThemedText>
+      <TylerWebComponentTest
+        name="DOMComponent"
+        dom={{
+          matchContents: true,
+          style: {
+            width: 200,
+            height: 200,
+          },
+        }}
+      />
+      <ThemedText>After Web View!</ThemedText>
     </ParallaxScrollView>
   );
 }
